@@ -1,0 +1,207 @@
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(72, 46, 68);
+    text-align: center;
+}
+
+body {
+    background-image: url(Images/Background_Image2.jpg);
+    margin: 0;
+    text-align: center;
+}
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: aliceblue;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    color: rgb(155, 57, 172);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.search-bar {
+    display: inline-block;
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.navbar a:hover {
+    background-color: rgb(181, 183, 212);
+}
+
+#box{
+    background-color: rgb(250, 199, 237);
+    color:rgb(27, 10, 25) ;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#box:hover{
+    font-size: 1.1em;
+    background-color: rgb(255, 220, 245);
+}
+
+
+
+
+.gallery {
+    display: inline-block;
+    border: 3px solid rgb(179, 115, 145);
+    margin: 45px;
+    width: 200px;
+}
+
+.gallery .description {
+    padding: 10px;
+    text-align: center;
+    text-decoration: dashed;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+}
+
+.gallery:hover {
+    border: 3px solid rgb(144, 85, 135);
+    box-shadow: 2px 2px 8px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+#displayed-image {
+    max-width: 500px;
+    height: auto;
+    margin-top: 70px;
+    margin-left: 0;
+    padding-left: 50px;
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+hr {
+    width: 50%;
+    margin: 10px auto;
+    border-color: #ddd;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+hr {
+    width: 50%;
+    margin: 10px auto;
+    border-color: #ddd;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+hr {
+    width: 50%;
+    margin: 10px auto;
+    border-color: #ddd;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+hr {
+    width: 50%;
+    margin: 10px auto;
+    border-color: #ddd;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+hr {
+    width: 50%;
+    margin: 10px auto;
+    border-color: #ddd;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.other-content,
+.product-categories {
+    flex: 1;
+}
+
+.other-content {
+    text-align: left;
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+
+.product-categories {
+    text-align: right;
+}
+
+h3 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.contact-info {
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #4285f4;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Detail</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <h1>AESTHETIC KAWAII STATIONARY</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="penpencils.html">PenPencils</a></li>
+            <li><a href="pens.html">Pens</a></li>
+            <li><a href="">Staplers</a></li>
+            <li><a href="diaries.html">Diaries</a></li>
+            <li><a href="STICKERS.html">Stickers</a></li>
+            <li><a href="">Tapes</a></li>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+            
+        </ul>
+        
+    <div id="image-detail">
+        <div class="description-container">
+            <img id="displayed-image" src="" alt="Image Detail">
+        </div>
+        <div class="order-details">
+            <button id="box1">ADD TO CART</button>
+            <button id="box2">BUY NOW</button>
+        </div>
+    </div>
+    <script>
+        // Get the image filename from the URL query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const imageName = urlParams.get('image');
+
+        // Set the image source on the displayed image
+        const displayedImage = document.getElementById('displayed-image');
+        displayedImage.src = `diaries/${imageName}`;
+    </script>
+</body>
+<footer>
+    <hr>
+    <div class="footer-content">
+        <!-- Other content on the left -->
+        <div class="other-content">
+            <p>Seller: Aesthetic Kawaii Stationery</p>
+            <p>&copy; 2024 Copyright Reserved</p>
+            <p class="contact-info"><small><a href="mailto:kawaiiStationary@gmail.com">kawaiiStationary@gmail.com</a></small></p>
+        </div>
+
+        <!-- Product Categories on the right -->
+        <div class="product-categories">
+            <h3>Product Categories</h3>
+            <ul>
+                <li><a href="penpencils.html">PenPencils</a></li>
+                <li><a href="pens.html">Pens</a></li>
+                <li><a href="staplers.html">Staplers</a></li>
+                <li><a href="diaries.html">Diaries</a></li>
+                <li><a href="stickers.html">Stickers</a></li>
+                <li><a href="tapes.html">Tapes</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</html>

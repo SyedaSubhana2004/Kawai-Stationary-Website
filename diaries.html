@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Diaries</title>
+        <link rel="icon" type="img/jpg" href="Images/favicon.png">
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <header>
+            <h1>AESTHETIC KAWAII STATIONARY</h1>
+        </header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="penpencils.html">PenPencils</a></li>
+                <li><a href="pens.html">Pens</a></li>
+                <li><a href="">Staplers</a></li>
+                <li><a href="diaries.html">Diaries</a></li>
+                <li><a href="STICKERS.html">Stickers</a></li>
+                <li><a href="">Tapes</a></li>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                </div>
+                
+            </ul>
+        </nav>
+        <h1>DIARIES </h1>
+        <div>
+            <div class="gallery">
+                <a target="_blank" href="image-detail.html?image=Diary1.webp" class="image-link">
+                    <div class="description-container">
+                        <img src="diaries/Diary1.webp" class="displayed-image">
+                        <div class="description">PEECH DIARY</div>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="gallery">
+                <a target="_blank" href="image-detail.html?image=Diary2.webp" class="image-link">
+                    <div class="description-container">
+                        <img src="diaries/Diary2.webp" class="displayed-image">
+                        <div class="description">RABBIT DIARY</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div>
+            <div class="gallery">
+                <a target="_blank" href="image-detail.html?image=Diary3.webp" class="image-link">
+                    <div class="image-container">
+                        <img src="diaries/Diary3.jpg" class="displayed-image">
+                        <div class="description">CATS PERACH</div>
+                    </div>
+                    <div class="description-container">
+                </div>
+            </a>
+        </div>
+        
+            <div class="gallery">
+                <a target="_blank" href="image-detail.html?image=Diary4.webp" class="image-link">
+                    <div class="description-container">
+                        <img src="diaries/Diary4.webp" class="displayed-image">
+                        <div class="description">KAWAII DIARY</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <script>
+            // JavaScript function to generate image detail pages
+            function generateImageDetailPages() {
+                const imageLinks = document.querySelectorAll('.gallery a');
+        
+                imageLinks.forEach(link => {
+                    const imageName = link.querySelector('img').src.split('/').pop();
+                    link.href = `image-detail.html?image=${imageName}`;
+                });
+            }
+        
+            // Call the function when the page loads
+            window.onload = function () {
+                generateImageDetailPages();
+                // Add any other initialization code here
+            };
+        </script>
+    <footer>
+        <hr>
+        <div class="footer-content">
+            <!-- Other content on the left -->
+            <div class="other-content">
+                <p>Seller: Aesthetic Kawaii Stationery</p>
+                <p>&copy; 2024 Copyright Reserved</p>
+                <p class="contact-info"><small><a href="mailto:kawaiiStationary@gmail.com">kawaiiStationary@gmail.com</a></small></p>
+            </div>
+    
+            <!-- Product Categories on the right -->
+            <div class="product-categories">
+                <h3>Product Categories</h3>
+                <ul>
+                    <li><a href="penpencils.html">PenPencils</a></li>
+                    <li><a href="pens.html">Pens</a></li>
+                    <li><a href="staplers.html">Staplers</a></li>
+                    <li><a href="diaries.html">Diaries</a></li>
+                    <li><a href="stickers.html">Stickers</a></li>
+                    <li><a href="tapes.html">Tapes</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>   
+
+
+
+
+    
+
+    </body> 
